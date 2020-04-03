@@ -1,4 +1,4 @@
-# Quotes
+# PROJECT NAME: Quotes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
 It takes the following input from the user using a form:
@@ -8,6 +8,18 @@ It takes the following input from the user using a form:
 3. Author
 4. Date of submission.
 
+# AUTHOR NAME:
+    Gerald Mwanu.
+
+# PROJECT DESCRIPTION:
+
+    This application allows the user to add a quote, delete, upvote and downvote quotes. The user interacts with the application via form for the above input.
+
+##  SETUP INSTRUCTIONS:
+
+    Download the above repository or go to your terminal and type :"git clone https://github.com/NderituMwanu/Quotes.git"
+    You will now have a copy of the repository on your local machine. Navigate into the main folder and run "ng serve".
+    pic this url: http://localhost:4200/ and paste it on your browser. The page opens and now you can edit the application as you view live changes.
 
 ## Development server
 
