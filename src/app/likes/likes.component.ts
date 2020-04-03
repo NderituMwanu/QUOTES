@@ -12,6 +12,7 @@ export class LikesComponent implements OnInit {
     this.numberOfLikes++;
   }
 
+  
   numberOfDislikes: number =0;
     disLikeButtonClick(){
       this.numberOfDislikes++;
