@@ -1,6 +1,13 @@
 # Quotes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+It takes the following input from the user using a form:
+
+1. Name
+2. Quote
+3. Author
+4. Date of submission.
+
 
 ## Development server
 
