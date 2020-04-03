@@ -17,8 +17,6 @@ export class LikesComponent implements OnInit {
       this.numberOfDislikes++;
     }
 
-
-    
   constructor() { }
 
   ngOnInit(): void {
