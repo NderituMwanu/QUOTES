@@ -15,6 +15,7 @@ export class GoalDetailComponent implements OnInit {
   }
   constructor() { }
 
+  
   ngOnInit(): void {
   }
 
