@@ -9,6 +9,7 @@ import { Goal } from '../quote';
 export class GoalFormComponent implements OnInit {
 
   newGoal = new Goal(0,"","","", new Date());
+  
   @Output() addGoal = new EventEmitter<Goal>();
 
     submitGoal(){
@@ -16,7 +17,7 @@ export class GoalFormComponent implements OnInit {
         }
   constructor() { }
 
-  
+
   ngOnInit(): void {
   }
 
