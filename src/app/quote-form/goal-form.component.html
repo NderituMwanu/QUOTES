@@ -1,0 +1,49 @@
+<div class="container-fluid">
+    <h2 class="text-center"> Create a new Quote! </h2>
+    <hr>
+
+
+    <form (ngSubmit) = 'submitGoal()' #goalForm = 'ngForm'>
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" required class="form-control" id="name" [(ngModel)]="newGoal.name" name="name" #name = "ngModel" required>
+            <!--testing-->
+            <div [hidden]="name.valid || name.pristine" class = "alert alert-danger">
+                <p>Sorry! Your name is required!</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="form group">
+            <label for="description">Quote:</label>
+            <textarea class="form-control" id="description" rows="4" [(ngModel)]="newGoal.description" name = "description" #description="ngModel" required></textarea>
+                <div [hidden] = "description.valid || description.pristine" class = "alert alert-danger">
+                    <p>OOPS! PLEASE ADD A QUOTE</p>
+                </div>
+        
+        </div>
+
+        <div>
+            <label for = "author">Author</label>
+            <textarea class = "form-control" id ="author" rows = "4" [(ngModel)]="newGoal.author"  name = "author" #author = "ngModel" required></textarea>
+            <div [hidden]="author.valid || author.pristine" class = "alert alert-danger">
+                <p>Please add in the Quote Author </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="complete">Date of Submission:</label>
+            <input type='date' id="complete" [(ngModel)] = "newGoal.completeDate" name = "completeDate" #completeDate = "ngModel" required>
+            <div [hidden] = "completeDate.valid || completeDate.pristine" class = "alert alert-danger">
+                <p>
+                    Oops! Date is required.
+                </p>
+        </div>
+        </div>
+        <button class="btn btn-primary">SUBMIT</button>
+    </form>
+    <br>
+    
+</div>

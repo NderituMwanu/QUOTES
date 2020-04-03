@@ -1,0 +1,28 @@
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="goal.component.css" rel="stylesheet" type="text/css">
+<div class="container">
+    <h1>My Quotes:</h1>
+    <hr>
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <div *ngFor='let goal of goals;let i = index'>
+                <div>
+                    <h4>
+                        Author:{{goal.author}} <br> Submitted by:{{goal.name}}
+                    </h4>
+                    <button class="btn btn-outline-primary" (click)='toggleDetails(i)'>See Quote</button>
+                </div>
+
+                <div *ngIf='goal.showDescription'>
+                    <app-goal-detail [goal]='goal' (isComplete)='deleteGoal($event, i)'></app-goal-detail>
+                </div>
+            </div>
+        </div>
+    <div class="col-md-6">
+    <app-goal-form (addGoal) = "addNewGoal($event)"></app-goal-form>
+    
+</div>
+
+</div>
